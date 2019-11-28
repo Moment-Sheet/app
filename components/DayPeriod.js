@@ -73,7 +73,7 @@ class CustomText extends Component {
     interval = setInterval(() => {
       this.setState({
         period: getPeriod().includes('Going')
-          ? getPeriod().split(':')[1]
+          ? getPeriod().split('d')[1]
           : getPeriod().split('d')[1],
       })
     }, 1000)
